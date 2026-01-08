@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import { Element } from './components/Element/Element'
 import './App.css'
 
 function App() {
@@ -25,9 +26,16 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Element
+        element="H"
+        name="Hydrogen"
+        number={1}
+      />
+      <Element
+        element="He"
+        name="Helium"
+        number={2}
+      />
     </>
   )
 }

@@ -1,0 +1,7 @@
+div::before {
+  content: attr(data-number);
+}
+
+div::after {
+  content: attr(data-name);
+}
