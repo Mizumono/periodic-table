@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { Element } from './components/Element/Element'
+import { elements } from './data/elements'
 import './App.css'
 
 function App() {
@@ -22,20 +23,10 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
       </div>
-      <Element
-        element="H"
-        name="Hydrogen"
-        number={1}
-      />
-      <Element
-        element="He"
-        name="Helium"
-        number={2}
-      />
+      {
+        elements.map((element) => <Element element={element} key={element.number} />)
+      }
     </>
   )
 }
