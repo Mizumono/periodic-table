@@ -1,6 +1,6 @@
 import type { ElementData } from '../../types/index';
 import { categoryColors } from './colors';
-import './Element.css'
+import styles from'./Element.module.css'
 
 interface ElementProps {
   element: ElementData;
@@ -13,6 +13,7 @@ export const Element = ({
 
   return (
     <button
+      className={styles.element}
       style={{
         backgroundColor,
         gridColumn: element.group,
