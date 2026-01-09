@@ -12,7 +12,13 @@ export const Element = ({
   const backgroundColor = categoryColors[element.category] || '#FFFFFF';
 
   return (
-    <button style={{ backgroundColor }}>
+    <button
+      style={{
+        backgroundColor,
+        gridColumn: element.group,
+        gridRow: element.period,
+      }}
+    >
       <div data-name={element.name} data-number={element.number}>
         <p>{ element.symbol }</p>
       </div>
