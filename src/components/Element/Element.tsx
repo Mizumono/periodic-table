@@ -9,13 +9,14 @@ interface ElementProps {
 export const Element = ({
   element
 }: ElementProps) => {
-  const backgroundColor = categoryColors[element.category] || '#FFFFFF';
+  const colors = categoryColors[element.category];
 
   return (
     <button
       className={styles.element}
       style={{
-        backgroundColor,
+        backgroundColor: colors.backgroundColor,
+        color: colors.color,
         gridColumn: element.group,
         gridRow: element.period,
       }}
