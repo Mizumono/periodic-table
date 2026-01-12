@@ -1,5 +1,5 @@
 import { Element } from './components/Element/Element'
-import { elements } from './data/elements'
+import { elements } from './data/index'
 import styles from './App.module.css';
 
 function App() {
