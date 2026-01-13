@@ -1,4 +1,5 @@
 import type { ElementData } from '../types';
+import { actinides } from './actinides';
 import { alkaliMetals } from './alkaliMetals';
 import { alkalineEarthMetals } from './alkalineEarthMetals';
 import { lanthanides } from './lanthanides';
@@ -9,6 +10,7 @@ import { reactiveNonmetals } from './reactiveNonmetals';
 import { transitionMetals } from './transitionMetals';
 
 export const elements: ElementData[] = [
+  ...actinides,
   ...alkaliMetals,
   ...alkalineEarthMetals,
   ...lanthanides,
