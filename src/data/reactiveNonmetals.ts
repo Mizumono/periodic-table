@@ -3,6 +3,14 @@ import type { ElementData } from '../types';
 export const reactiveNonmetals: ElementData[] = [
   {
     category: 'Reactive Nonmetal',
+    group: 1,
+    name: 'Hydrogen',
+    number: 1,
+    period: 1,
+    symbol: 'H',
+  },
+  {
+    category: 'Reactive Nonmetal',
     group: 14,
     name: 'Carbon',
     number: 6,
