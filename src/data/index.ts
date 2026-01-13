@@ -8,6 +8,7 @@ import { nobleGases } from './nobleGases';
 import { postTransitionMetals } from './postTransitionMetals';
 import { reactiveNonmetals } from './reactiveNonmetals';
 import { transitionMetals } from './transitionMetals';
+import { unknownChemicalProperties } from './unknownChemicalProperties';
 
 export const elements: ElementData[] = [
   ...actinides,
@@ -19,4 +20,5 @@ export const elements: ElementData[] = [
   ...postTransitionMetals,
   ...reactiveNonmetals,
   ...transitionMetals,
+  ...unknownChemicalProperties,
 ];
