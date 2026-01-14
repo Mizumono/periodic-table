@@ -7,7 +7,7 @@ export const nobleGases: ElementData[] = [
     name: 'Helium',
     number: 2,
     period: 1,
-    symbol: 'B',
+    symbol: 'He',
   },
   {
     category: 'Noble Gas',
