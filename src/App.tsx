@@ -1,8 +1,11 @@
 import { PeriodicTable } from './components/PeriodicTable/PeriodicTable';
+import styles from './App.module.css';
 
 function App() {
   return (
-    <PeriodicTable />
+    <div className={styles.appWrapper}>
+      <PeriodicTable />
+    </div>
   )
 }
 
