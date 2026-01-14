@@ -1,6 +1,0 @@
-.periodicTable {
-  display: grid;
-  gap: 2px;
-  grid-template-columns: repeat(18, 64px);
-  grid-template-rows: repeat(10, 64px);
-}
