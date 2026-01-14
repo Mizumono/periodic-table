@@ -21,8 +21,8 @@ export const Element = ({
         gridRow: element.period,
       }}
     >
-      <div data-name={element.name} data-number={element.number}>
-        <p>{ element.symbol }</p>
+      <div className={styles.content} data-name={element.name} data-number={element.number}>
+        <p className={styles.symbol}>{ element.symbol }</p>
       </div>
     </button>
   );
