@@ -1,5 +1,7 @@
+import type { Category } from './categories';
+
 export interface ElementData {
-  category: string;
+  category: Category;
   group: number;
   name: string;
   number: number;
