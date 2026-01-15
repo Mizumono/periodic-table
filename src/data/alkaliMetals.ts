@@ -2,7 +2,7 @@ import type { ElementData } from '../types';
 
 export const alkaliMetals: ElementData[] = [
   {
-    category: 'Alkali Metal',
+    category: 'alkali_metal',
     group: 1,
     name: 'Lithium',
     number: 3,
@@ -10,7 +10,7 @@ export const alkaliMetals: ElementData[] = [
     symbol: 'Li',
   },
   {
-    category: 'Alkali Metal',
+    category: 'alkali_metal',
     group: 1,
     name: 'Sodium',
     number: 11,
@@ -18,7 +18,7 @@ export const alkaliMetals: ElementData[] = [
     symbol: 'Na',
   },
   {
-    category: 'Alkali Metal',
+    category: 'alkali_metal',
     group: 1,
     name: 'Potassium',
     number: 19,
@@ -26,7 +26,7 @@ export const alkaliMetals: ElementData[] = [
     symbol: 'K',
   },
   {
-    category: 'Alkali Metal',
+    category: 'alkali_metal',
     group: 1,
     name: 'Rubidium',
     number: 37,
@@ -34,7 +34,7 @@ export const alkaliMetals: ElementData[] = [
     symbol: 'Rb',
   },
   {
-    category: 'Alkali Metal',
+    category: 'alkali_metal',
     group: 1,
     name: 'Caesium',
     number: 55,
@@ -42,7 +42,7 @@ export const alkaliMetals: ElementData[] = [
     symbol: 'Cs',
   },
   {
-    category: 'Alkali Metal',
+    category: 'alkali_metal',
     group: 1,
     name: 'Francium',
     number: 87,

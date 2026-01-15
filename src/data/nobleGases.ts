@@ -2,7 +2,7 @@ import type { ElementData } from '../types';
 
 export const nobleGases: ElementData[] = [
   {
-    category: 'Noble Gas',
+    category: 'noble_gas',
     group: 18,
     name: 'Helium',
     number: 2,
@@ -10,7 +10,7 @@ export const nobleGases: ElementData[] = [
     symbol: 'He',
   },
   {
-    category: 'Noble Gas',
+    category: 'noble_gas',
     group: 18,
     name: 'Neon',
     number: 10,
@@ -18,7 +18,7 @@ export const nobleGases: ElementData[] = [
     symbol: 'Ne',
   },
   {
-    category: 'Noble Gas',
+    category: 'noble_gas',
     group: 18,
     name: 'Argon',
     number: 18,
@@ -26,7 +26,7 @@ export const nobleGases: ElementData[] = [
     symbol: 'Ar',
   },
   {
-    category: 'Noble Gas',
+    category: 'noble_gas',
     group: 18,
     name: 'Krypton',
     number: 36,
@@ -34,7 +34,7 @@ export const nobleGases: ElementData[] = [
     symbol: 'Kr',
   },
   {
-    category: 'Noble Gas',
+    category: 'noble_gas',
     group: 18,
     name: 'Xenon',
     number: 54,
@@ -42,7 +42,7 @@ export const nobleGases: ElementData[] = [
     symbol: 'Xe',
   },
   {
-    category: 'Noble Gas',
+    category: 'noble_gas',
     group: 18,
     name: 'Radon',
     number: 86,

@@ -2,7 +2,7 @@ import type { ElementData } from '../types';
 
 export const reactiveNonmetals: ElementData[] = [
   {
-    category: 'Reactive Nonmetal',
+    category: 'reactive_nonmetal',
     group: 1,
     name: 'Hydrogen',
     number: 1,
@@ -10,7 +10,7 @@ export const reactiveNonmetals: ElementData[] = [
     symbol: 'H',
   },
   {
-    category: 'Reactive Nonmetal',
+    category: 'reactive_nonmetal',
     group: 14,
     name: 'Carbon',
     number: 6,
@@ -18,7 +18,7 @@ export const reactiveNonmetals: ElementData[] = [
     symbol: 'C',
   },
   {
-    category: 'Reactive Nonmetal',
+    category: 'reactive_nonmetal',
     group: 15,
     name: 'Nitrogen',
     number: 7,
@@ -26,7 +26,7 @@ export const reactiveNonmetals: ElementData[] = [
     symbol: 'N',
   },
   {
-    category: 'Reactive Nonmetal',
+    category: 'reactive_nonmetal',
     group: 16,
     name: 'Oxygen',
     number: 8,
@@ -34,7 +34,7 @@ export const reactiveNonmetals: ElementData[] = [
     symbol: 'O',
   },
   {
-    category: 'Reactive Nonmetal',
+    category: 'reactive_nonmetal',
     group: 17,
     name: 'Fluorine',
     number: 9,
@@ -42,7 +42,7 @@ export const reactiveNonmetals: ElementData[] = [
     symbol: 'F',
   },
   {
-    category: 'Reactive Nonmetal',
+    category: 'reactive_nonmetal',
     group: 15,
     name: 'Phosphorus',
     number: 15,
@@ -50,7 +50,7 @@ export const reactiveNonmetals: ElementData[] = [
     symbol: 'P',
   },
   {
-    category: 'Reactive Nonmetal',
+    category: 'reactive_nonmetal',
     group: 16,
     name: 'Sulfur',
     number: 16,
@@ -58,7 +58,7 @@ export const reactiveNonmetals: ElementData[] = [
     symbol: 'S',
   },
   {
-    category: 'Reactive Nonmetal',
+    category: 'reactive_nonmetal',
     group: 17,
     name: 'Chlorine',
     number: 17,
@@ -66,7 +66,7 @@ export const reactiveNonmetals: ElementData[] = [
     symbol: 'Cl',
   },
   {
-    category: 'Reactive Nonmetal',
+    category: 'reactive_nonmetal',
     group: 16,
     name: 'Selenium',
     number: 34,
@@ -74,7 +74,7 @@ export const reactiveNonmetals: ElementData[] = [
     symbol: 'Se',
   },
   {
-    category: 'Reactive Nonmetal',
+    category: 'reactive_nonmetal',
     group: 17,
     name: 'Bromine',
     number: 35,
@@ -82,7 +82,7 @@ export const reactiveNonmetals: ElementData[] = [
     symbol: 'Br',
   },
   {
-    category: 'Reactive Nonmetal',
+    category: 'reactive_nonmetal',
     group: 17,
     name: 'Iodine',
     number: 53,

@@ -2,7 +2,7 @@ import type { ElementData } from '../types';
 
 export const postTransitionMetals: ElementData[] = [
   {
-    category: 'Post-transition Metal',
+    category: 'post_transition_metal',
     group: 13,
     name: 'Aluminium',
     number: 13,
@@ -10,7 +10,7 @@ export const postTransitionMetals: ElementData[] = [
     symbol: 'Al',
   },
   {
-    category: 'Post-transition Metal',
+    category: 'post_transition_metal',
     group: 13,
     name: 'Gallium',
     number: 31,
@@ -18,7 +18,7 @@ export const postTransitionMetals: ElementData[] = [
     symbol: 'Ga',
   },
   {
-    category: 'Post-transition Metal',
+    category: 'post_transition_metal',
     group: 13,
     name: 'Indium',
     number: 49,
@@ -26,7 +26,7 @@ export const postTransitionMetals: ElementData[] = [
     symbol: 'In',
   },
   {
-    category: 'Post-transition Metal',
+    category: 'post_transition_metal',
     group: 13,
     name: 'Thallium',
     number: 81,
@@ -34,7 +34,7 @@ export const postTransitionMetals: ElementData[] = [
     symbol: 'Tl',
   },
   {
-    category: 'Post-transition Metal',
+    category: 'post_transition_metal',
     group: 14,
     name: 'Tin',
     number: 50,
@@ -42,7 +42,7 @@ export const postTransitionMetals: ElementData[] = [
     symbol: 'Sn',
   },
   {
-    category: 'Post-transition Metal',
+    category: 'post_transition_metal',
     group: 14,
     name: 'Lead',
     number: 82,
@@ -50,7 +50,7 @@ export const postTransitionMetals: ElementData[] = [
     symbol: 'Pb',
   },
   {
-    category: 'Post-transition Metal',
+    category: 'post_transition_metal',
     group: 15,
     name: 'Bismuth',
     number: 83,
@@ -58,7 +58,7 @@ export const postTransitionMetals: ElementData[] = [
     symbol: 'Bi',
   },
   {
-    category: 'Post-transition Metal',
+    category: 'post_transition_metal',
     group: 16,
     name: 'Polonium',
     number: 84,
@@ -66,7 +66,7 @@ export const postTransitionMetals: ElementData[] = [
     symbol: 'Po',
   },
   {
-    category: 'Post-transition Metal',
+    category: 'post_transition_metal',
     group: 17,
     name: 'Astatine',
     number: 85,

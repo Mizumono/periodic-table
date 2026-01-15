@@ -2,7 +2,7 @@ import type { ElementData } from '../types';
 
 export const transitionMetals: ElementData[] = [
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 3,
     name: 'Scandium',
     number: 21,
@@ -10,7 +10,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Sc',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 4,
     name: 'Titanium',
     number: 22,
@@ -18,7 +18,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Ti',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 5,
     name: 'Vanadium',
     number: 23,
@@ -26,7 +26,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'V',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 6,
     name: 'Chromium',
     number: 24,
@@ -34,7 +34,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Cr',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 7,
     name: 'Manganese',
     number: 25,
@@ -42,7 +42,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Mn',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 8,
     name: 'Iron',
     number: 26,
@@ -50,7 +50,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Fe',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 9,
     name: 'Cobalt',
     number: 27,
@@ -58,7 +58,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Co',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 10,
     name: 'Nickel',
     number: 28,
@@ -66,7 +66,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Ni',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 11,
     name: 'Copper',
     number: 29,
@@ -74,7 +74,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Cu',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 12,
     name: 'Zinc',
     number: 30,
@@ -82,7 +82,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Zn',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 3,
     name: 'Yttrium',
     number: 39,
@@ -90,7 +90,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Y',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 4,
     name: 'Zirconium',
     number: 40,
@@ -98,7 +98,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Zr',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 5,
     name: 'Niobium',
     number: 41,
@@ -106,7 +106,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Nb',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 6,
     name: 'Molybdenum',
     number: 42,
@@ -114,7 +114,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Mo',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 7,
     name: 'Technetium',
     number: 43,
@@ -122,7 +122,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Tc',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 8,
     name: 'Ruthenium',
     number: 44,
@@ -130,7 +130,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Ru',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 9,
     name: 'Rhodium',
     number: 45,
@@ -138,7 +138,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Rh',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 10,
     name: 'Palladium',
     number: 46,
@@ -146,7 +146,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Pd',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 11,
     name: 'Silver',
     number: 47,
@@ -154,7 +154,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Ag',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 12,
     name: 'Cadmium',
     number: 48,
@@ -162,7 +162,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Cd',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 4,
     name: 'Hafnium',
     number: 72,
@@ -170,7 +170,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Hf',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 5,
     name: 'Tantalum',
     number: 73,
@@ -178,7 +178,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Ta',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 6,
     name: 'Tungsten',
     number: 74,
@@ -186,7 +186,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'W',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 7,
     name: 'Rhenium',
     number: 75,
@@ -194,7 +194,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Re',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 8,
     name: 'Osmium',
     number: 76,
@@ -202,7 +202,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Os',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 9,
     name: 'Iridium',
     number: 77,
@@ -210,7 +210,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Ir',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 10,
     name: 'Platinum',
     number: 78,
@@ -218,7 +218,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Pt',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 11,
     name: 'Gold',
     number: 79,
@@ -226,7 +226,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Au',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 12,
     name: 'Mercury',
     number: 80,
@@ -234,7 +234,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Hg',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 4,
     name: 'Rutherfordium',
     number: 104,
@@ -242,7 +242,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Rf',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 5,
     name: 'Dubnium',
     number: 105,
@@ -250,7 +250,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Db',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 6,
     name: 'Seaborgium',
     number: 106,
@@ -258,7 +258,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Sg',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 7,
     name: 'Bohrium',
     number: 107,
@@ -266,7 +266,7 @@ export const transitionMetals: ElementData[] = [
     symbol: 'Bh',
   },
   {
-    category: 'Transition Metal',
+    category: 'transition_metal',
     group: 8,
     name: 'Hassium',
     number: 108,

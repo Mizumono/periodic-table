@@ -2,7 +2,7 @@ import type { ElementData } from '../types';
 
 export const actinides: ElementData[] = [
   {
-    category: 'Actinide',
+    category: 'actinide',
     group: 3,
     name: 'Actinium',
     number: 89,
@@ -10,7 +10,7 @@ export const actinides: ElementData[] = [
     symbol: 'Ac',
   },
   {
-    category: 'Actinide',
+    category: 'actinide',
     group: 4,
     name: 'Thorium',
     number: 90,
@@ -18,7 +18,7 @@ export const actinides: ElementData[] = [
     symbol: 'Th',
   },
   {
-    category: 'Actinide',
+    category: 'actinide',
     group: 5,
     name: 'Protactinium',
     number: 91,
@@ -26,7 +26,7 @@ export const actinides: ElementData[] = [
     symbol: 'Pa',
   },
   {
-    category: 'Actinide',
+    category: 'actinide',
     group: 6,
     name: 'Uranium',
     number: 92,
@@ -34,7 +34,7 @@ export const actinides: ElementData[] = [
     symbol: 'U',
   },
   {
-    category: 'Actinide',
+    category: 'actinide',
     group: 7,
     name: 'Neptunium',
     number: 93,
@@ -42,7 +42,7 @@ export const actinides: ElementData[] = [
     symbol: 'Np',
   },
   {
-    category: 'Actinide',
+    category: 'actinide',
     group: 8,
     name: 'Plutonium',
     number: 94,
@@ -50,7 +50,7 @@ export const actinides: ElementData[] = [
     symbol: 'Pu',
   },
   {
-    category: 'Actinide',
+    category: 'actinide',
     group: 9,
     name: 'Americium',
     number: 95,
@@ -58,7 +58,7 @@ export const actinides: ElementData[] = [
     symbol: 'Am',
   },
   {
-    category: 'Actinide',
+    category: 'actinide',
     group: 10,
     name: 'Curium',
     number: 96,
@@ -66,7 +66,7 @@ export const actinides: ElementData[] = [
     symbol: 'Cm',
   },
   {
-    category: 'Actinide',
+    category: 'actinide',
     group: 11,
     name: 'Berkelium',
     number: 97,
@@ -74,7 +74,7 @@ export const actinides: ElementData[] = [
     symbol: 'Bk',
   },
   {
-    category: 'Actinide',
+    category: 'actinide',
     group: 12,
     name: 'Californium',
     number: 98,
@@ -82,7 +82,7 @@ export const actinides: ElementData[] = [
     symbol: 'Cf',
   },
   {
-    category: 'Actinide',
+    category: 'actinide',
     group: 13,
     name: 'Einsteinium',
     number: 99,
@@ -90,7 +90,7 @@ export const actinides: ElementData[] = [
     symbol: 'Es',
   },
   {
-    category: 'Actinide',
+    category: 'actinide',
     group: 14,
     name: 'Fermium',
     number: 100,
@@ -98,7 +98,7 @@ export const actinides: ElementData[] = [
     symbol: 'Fm',
   },
   {
-    category: 'Actinide',
+    category: 'actinide',
     group: 15,
     name: 'Mendelevium',
     number: 101,
@@ -106,7 +106,7 @@ export const actinides: ElementData[] = [
     symbol: 'Md',
   },
   {
-    category: 'Actinide',
+    category: 'actinide',
     group: 16,
     name: 'Nobelium',
     number: 102,
@@ -114,7 +114,7 @@ export const actinides: ElementData[] = [
     symbol: 'No',
   },
   {
-    category: 'Actinide',
+    category: 'actinide',
     group: 17,
     name: 'Lawrencium',
     number: 103,

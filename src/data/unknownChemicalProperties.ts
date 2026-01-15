@@ -2,7 +2,7 @@ import type { ElementData } from '../types';
 
 export const unknownChemicalProperties: ElementData[] = [
   {
-    category: 'Unknown Chemical Properties',
+    category: 'unknown',
     group: 9,
     name: 'Meitnerium',
     number: 109,
@@ -10,7 +10,7 @@ export const unknownChemicalProperties: ElementData[] = [
     symbol: 'Mt',
   },
   {
-    category: 'Unknown Chemical Properties',
+    category: 'unknown',
     group: 10,
     name: 'Darmstadtium',
     number: 110,
@@ -18,7 +18,7 @@ export const unknownChemicalProperties: ElementData[] = [
     symbol: 'Ds',
   },
   {
-    category: 'Unknown Chemical Properties',
+    category: 'unknown',
     group: 11,
     name: 'Roentgenium',
     number: 111,
@@ -26,7 +26,7 @@ export const unknownChemicalProperties: ElementData[] = [
     symbol: 'Rg',
   },
   {
-    category: 'Unknown Chemical Properties',
+    category: 'unknown',
     group: 12,
     name: 'Copernicium',
     number: 112,
@@ -34,7 +34,7 @@ export const unknownChemicalProperties: ElementData[] = [
     symbol: 'Cn',
   },
   {
-    category: 'Unknown Chemical Properties',
+    category: 'unknown',
     group: 13,
     name: 'Nihonium',
     number: 113,
@@ -42,7 +42,7 @@ export const unknownChemicalProperties: ElementData[] = [
     symbol: 'Nh',
   },
   {
-    category: 'Unknown Chemical Properties',
+    category: 'unknown',
     group: 14,
     name: 'Flerovium',
     number: 114,
@@ -50,7 +50,7 @@ export const unknownChemicalProperties: ElementData[] = [
     symbol: 'Fl',
   },
   {
-    category: 'Unknown Chemical Properties',
+    category: 'unknown',
     group: 15,
     name: 'Moscovium',
     number: 115,
@@ -58,7 +58,7 @@ export const unknownChemicalProperties: ElementData[] = [
     symbol: 'Mc',
   },
   {
-    category: 'Unknown Chemical Properties',
+    category: 'unknown',
     group: 16,
     name: 'Livermorium',
     number: 116,
@@ -66,7 +66,7 @@ export const unknownChemicalProperties: ElementData[] = [
     symbol: 'Lv',
   },
   {
-    category: 'Unknown Chemical Properties',
+    category: 'unknown',
     group: 17,
     name: 'Tennessine',
     number: 117,
@@ -74,7 +74,7 @@ export const unknownChemicalProperties: ElementData[] = [
     symbol: 'Ts',
   },
   {
-    category: 'Unknown Chemical Properties',
+    category: 'unknown',
     group: 18,
     name: 'Oganesson',
     number: 118,

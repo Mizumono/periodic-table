@@ -2,7 +2,7 @@ import type { ElementData } from '../types';
 
 export const metalloids: ElementData[] = [
   {
-    category: 'Metalloid',
+    category: 'metalloid',
     group: 13,
     name: 'Boron',
     number: 5,
@@ -10,7 +10,7 @@ export const metalloids: ElementData[] = [
     symbol: 'B',
   },
   {
-    category: 'Metalloid',
+    category: 'metalloid',
     group: 14,
     name: 'Silicon',
     number: 14,
@@ -18,7 +18,7 @@ export const metalloids: ElementData[] = [
     symbol: 'Si',
   },
   {
-    category: 'Metalloid',
+    category: 'metalloid',
     group: 14,
     name: 'Germanium',
     number: 32,
@@ -26,7 +26,7 @@ export const metalloids: ElementData[] = [
     symbol: 'Ge',
   },
   {
-    category: 'Metalloid',
+    category: 'metalloid',
     group: 15,
     name: 'Arsenic',
     number: 33,
@@ -34,7 +34,7 @@ export const metalloids: ElementData[] = [
     symbol: 'As',
   },
   {
-    category: 'Metalloid',
+    category: 'metalloid',
     group: 15,
     name: 'Antimony',
     number: 51,
@@ -42,7 +42,7 @@ export const metalloids: ElementData[] = [
     symbol: 'Sb',
   },
   {
-    category: 'Metalloid',
+    category: 'metalloid',
     group: 16,
     name: 'Tellurium',
     number: 52,

@@ -2,7 +2,7 @@ import type { ElementData } from '../types';
 
 export const alkalineEarthMetals: ElementData[] = [
   {
-    category: 'Alkaline Earth Metal',
+    category: 'alkaline_earth_metal',
     group: 2,
     name: 'Beryllium',
     number: 4,
@@ -10,7 +10,7 @@ export const alkalineEarthMetals: ElementData[] = [
     symbol: 'Be',
   },
   {
-    category: 'Alkaline Earth Metal',
+    category: 'alkaline_earth_metal',
     group: 2,
     name: 'Magnesium',
     number: 12,
@@ -18,7 +18,7 @@ export const alkalineEarthMetals: ElementData[] = [
     symbol: 'Mg',
   },
   {
-    category: 'Alkaline Earth Metal',
+    category: 'alkaline_earth_metal',
     group: 2,
     name: 'Calcium',
     number: 20,
@@ -26,7 +26,7 @@ export const alkalineEarthMetals: ElementData[] = [
     symbol: 'Ca',
   },
   {
-    category: 'Alkaline Earth Metal',
+    category: 'alkaline_earth_metal',
     group: 2,
     name: 'Strontium',
     number: 38,
@@ -34,7 +34,7 @@ export const alkalineEarthMetals: ElementData[] = [
     symbol: 'Sr',
   },
   {
-    category: 'Alkaline Earth Metal',
+    category: 'alkaline_earth_metal',
     group: 2,
     name: 'Barium',
     number: 56,
@@ -42,7 +42,7 @@ export const alkalineEarthMetals: ElementData[] = [
     symbol: 'Ba',
   },
   {
-    category: 'Alkaline Earth Metal',
+    category: 'alkaline_earth_metal',
     group: 2,
     name: 'Radium',
     number: 88,

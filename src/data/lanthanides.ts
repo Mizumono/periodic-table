@@ -2,7 +2,7 @@ import type { ElementData } from '../types';
 
 export const lanthanides: ElementData[] = [
   {
-    category: 'Lanthanide',
+    category: 'lanthanide',
     group: 3,
     name: 'Lanthanum',
     number: 57,
@@ -10,7 +10,7 @@ export const lanthanides: ElementData[] = [
     symbol: 'La',
   },
   {
-    category: 'Lanthanide',
+    category: 'lanthanide',
     group: 4,
     name: 'Cerium',
     number: 58,
@@ -18,7 +18,7 @@ export const lanthanides: ElementData[] = [
     symbol: 'Ce',
   },
   {
-    category: 'Lanthanide',
+    category: 'lanthanide',
     group: 5,
     name: 'Praseodymium',
     number: 59,
@@ -26,7 +26,7 @@ export const lanthanides: ElementData[] = [
     symbol: 'Pr',
   },
   {
-    category: 'Lanthanide',
+    category: 'lanthanide',
     group: 6,
     name: 'Neodymium',
     number: 60,
@@ -34,7 +34,7 @@ export const lanthanides: ElementData[] = [
     symbol: 'Nd',
   },
   {
-    category: 'Lanthanide',
+    category: 'lanthanide',
     group: 7,
     name: 'Promethium',
     number: 61,
@@ -42,7 +42,7 @@ export const lanthanides: ElementData[] = [
     symbol: 'Pm',
   },
   {
-    category: 'Lanthanide',
+    category: 'lanthanide',
     group: 8,
     name: 'Samarium',
     number: 62,
@@ -50,7 +50,7 @@ export const lanthanides: ElementData[] = [
     symbol: 'Sm',
   },
   {
-    category: 'Lanthanide',
+    category: 'lanthanide',
     group: 9,
     name: 'Europium',
     number: 63,
@@ -58,7 +58,7 @@ export const lanthanides: ElementData[] = [
     symbol: 'Eu',
   },
   {
-    category: 'Lanthanide',
+    category: 'lanthanide',
     group: 10,
     name: 'Gadolinium',
     number: 64,
@@ -66,7 +66,7 @@ export const lanthanides: ElementData[] = [
     symbol: 'Gd',
   },
   {
-    category: 'Lanthanide',
+    category: 'lanthanide',
     group: 11,
     name: 'Terbium',
     number: 65,
@@ -74,7 +74,7 @@ export const lanthanides: ElementData[] = [
     symbol: 'Tb',
   },
   {
-    category: 'Lanthanide',
+    category: 'lanthanide',
     group: 12,
     name: 'Dysprosium',
     number: 66,
@@ -82,7 +82,7 @@ export const lanthanides: ElementData[] = [
     symbol: 'Dy',
   },
   {
-    category: 'Lanthanide',
+    category: 'lanthanide',
     group: 13,
     name: 'Holmium',
     number: 67,
@@ -90,7 +90,7 @@ export const lanthanides: ElementData[] = [
     symbol: 'Ho',
   },
   {
-    category: 'Lanthanide',
+    category: 'lanthanide',
     group: 14,
     name: 'Erbium',
     number: 68,
@@ -98,7 +98,7 @@ export const lanthanides: ElementData[] = [
     symbol: 'Er',
   },
   {
-    category: 'Lanthanide',
+    category: 'lanthanide',
     group: 15,
     name: 'Thulium',
     number: 69,
@@ -106,7 +106,7 @@ export const lanthanides: ElementData[] = [
     symbol: 'Tm',
   },
   {
-    category: 'Lanthanide',
+    category: 'lanthanide',
     group: 16,
     name: 'Ytterbium',
     number: 70,
@@ -114,7 +114,7 @@ export const lanthanides: ElementData[] = [
     symbol: 'Yb',
   },
   {
-    category: 'Lanthanide',
+    category: 'lanthanide',
     group: 17,
     name: 'Lutetium',
     number: 71,
