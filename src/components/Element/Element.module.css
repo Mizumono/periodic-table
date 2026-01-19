@@ -7,6 +7,12 @@
   padding: 0;
 }
 
+.element:focus {
+  outline-style: solid;
+  outline-width: 4px;
+  z-index: 9;
+}
+
 .content {
   display: flex;
   flex-direction: column;
