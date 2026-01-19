@@ -25,6 +25,7 @@ export const Element = ({
         gridColumn: element.group,
         gridRow: element.period,
         opacity: dimmed ? 0.25 : 1,
+        outlineColor: colors.color,
       }}
       onClick={() => onSelectCategory(element.category)}
     >
