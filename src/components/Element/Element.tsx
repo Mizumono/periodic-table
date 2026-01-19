@@ -16,9 +16,16 @@ export const Element = ({
 }: ElementProps) => {
   const colors = categoryColors[element.category];
 
+  const handleClick = (event: React.MouseEvent) => {
+    event.stopPropagation();
+
+    onSelectCategory(element.category);
+  }
+
   return (
     <button
       className={styles.element}
+      onClick={handleClick}
       style={{
         backgroundColor: colors.backgroundColor,
         color: colors.color,
@@ -27,7 +34,6 @@ export const Element = ({
         opacity: dimmed ? 0.25 : 1,
         outlineColor: colors.color,
       }}
-      onClick={() => onSelectCategory(element.category)}
     >
       <div className={styles.content} data-name={element.name} data-number={element.number}>
         <p className={styles.symbol}>{ element.symbol }</p>
