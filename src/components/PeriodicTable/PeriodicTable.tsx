@@ -5,9 +5,10 @@ import styles from'./PeriodicTable.module.css';
 
 type PeriodicTableProps = {
   activeCategory: Category | null;
+  onSelectCategory: (category: Category) => void;
 };
 
-export const PeriodicTable = ({ activeCategory }: PeriodicTableProps) => (
+export const PeriodicTable = ({ activeCategory, onSelectCategory }: PeriodicTableProps) => (
   <div className={styles.periodicTable}>
     {
       elements.map((element) => (
@@ -15,6 +16,7 @@ export const PeriodicTable = ({ activeCategory }: PeriodicTableProps) => (
           dimmed={activeCategory && element.category !== activeCategory}
           element={element}
           key={element.number}
+          onSelectCategory={onSelectCategory}
         />
       ))
     }

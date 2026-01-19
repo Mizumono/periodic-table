@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className={styles.appWrapper}>
-      <PeriodicTable activeCategory={activeCategory} />
+      <PeriodicTable activeCategory={activeCategory} onSelectCategory={setActiveCategory} />
       <Filters onSelectCategory={setActiveCategory} />
     </div>
   )
