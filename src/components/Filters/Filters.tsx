@@ -5,11 +5,17 @@ type FiltersProps = {
 };
 
 export const Filters = ({ onSelectCategory }: FiltersProps) => {
+  const handleClick = (event: React.MouseEvent, category: Category) => {
+    event.stopPropagation();
+
+    onSelectCategory(category);
+  }
+
   return (
     <div>
       {
         Object.entries(CATEGORY_LABELS).map(([key, label]) => (
-          <button key={key} onClick={() => onSelectCategory(key as Category)}>{label}</button>
+          <button key={key} onClick={event => handleClick(event, key as Category)}>{label}</button>
         ))
       }
     </div>
