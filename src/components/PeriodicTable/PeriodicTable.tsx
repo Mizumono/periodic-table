@@ -8,17 +8,21 @@ type PeriodicTableProps = {
   onSelectCategory: (category: Category) => void;
 };
 
-export const PeriodicTable = ({ activeCategory, onSelectCategory }: PeriodicTableProps) => (
-  <div className={styles.periodicTable}>
-    {
-      elements.map((element) => (
-        <Element
-          dimmed={activeCategory && element.category !== activeCategory}
-          element={element}
-          key={element.number}
-          onSelectCategory={onSelectCategory}
-        />
-      ))
-    }
-  </div>
-);
+export const PeriodicTable = ({ activeCategory, onSelectCategory }: PeriodicTableProps) => {
+  const sortedElements = [...elements].sort((a, b) => a.number - b.number);
+
+  return (
+    <div className={styles.periodicTable}>
+      {
+        sortedElements.map((element) => (
+          <Element
+            dimmed={activeCategory && element.category !== activeCategory}
+            element={element}
+            key={element.number}
+            onSelectCategory={onSelectCategory}
+          />
+        ))
+      }
+    </div>
+  );
+};
