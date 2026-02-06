@@ -7,12 +7,14 @@ interface ElementProps {
   dimmed: boolean | null;
   element: ElementData;
   onSelectCategory: (category: Category) => void;
+  onSelectElement: (element: ElementData) => void;
 }
 
 export const Element = ({
   dimmed,
   element,
-  onSelectCategory
+  onSelectCategory,
+  onSelectElement,
 }: ElementProps) => {
   const colors = categoryColors[element.category];
 
@@ -20,6 +22,7 @@ export const Element = ({
     event.stopPropagation();
 
     onSelectCategory(element.category);
+    onSelectElement(element);
   }
 
   return (
