@@ -18,7 +18,17 @@
 }
 
 .description {
+  font-size: 14px;
   margin: 16px 0;
   padding: 0 8px;
+}
+
+.detailsList {
   font-size: 14px;
+  margin: 16px 0;
+  padding: 0 8px;
+}
+
+.detailsList dt {
+  font-weight: bold;
 }
