@@ -1,4 +1,8 @@
+import { categoryColors } from '../Element/colors';
 import { CATEGORY_LABELS, type Category } from '../../types/categories';
+
+import a11y from '../../styles/a11y.module.css';
+import styles from './Filters.module.css';
 
 type FiltersProps = {
   activeCategory: Category | null;
@@ -6,15 +10,23 @@ type FiltersProps = {
 };
 
 export const Filters = ({ activeCategory, onSelectCategory }: FiltersProps) => (
-  <fieldset>
-    <legend>Filter elements by category</legend>
+  <fieldset className={styles.filters}>
+    <legend className={a11y.srOnly}>Filter elements by category</legend>
     {Object.entries(CATEGORY_LABELS).map(([key, label]) => {
       const category = key as Category;
 
       return (
-        <label key={key}>
+        <label
+          className={`${styles.filter} ${activeCategory === category ? styles.active : ''}`}
+          key={key}
+          style={{
+            '--category-color': categoryColors[category].color,
+            '--category-background-color': categoryColors[category].backgroundColor,
+          } as React.CSSProperties}
+        >
           <input
             checked={activeCategory === category}
+            className={a11y.srOnly}
             name="elementCategory"
             onChange={() => onSelectCategory(category)}
             type="radio"

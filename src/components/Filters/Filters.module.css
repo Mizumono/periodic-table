@@ -1,0 +1,45 @@
+.filters {
+  background-color: #fff;
+  border: none;
+  padding: 8px;
+}
+
+.filter {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.filter:before {
+  background-color: var(--category-background-color);
+  border-radius: 50%;
+  border: 1px solid var(--category-color);
+  content: '';
+  display: block;
+  height: 16px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 16px;
+}
+
+.filter:after {
+  background-color: var(--category-color);
+  border-radius: 50%;
+  content: '';
+  height: 8px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  transform: scale(0);
+  transition: 0.2s;
+  width: 8px;
+}
+
+.filter.active:after {
+  transform: scale(1);
+}
