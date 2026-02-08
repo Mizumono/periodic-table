@@ -24,8 +24,8 @@ function App() {
         onSelectCategory={setActiveCategory}
         onSelectElement={setSelectedElement}
       />
-      <ElementDetails element={selectedElement} />
-      <Filters onSelectCategory={setActiveCategory} />
+      {/* <ElementDetails element={selectedElement} /> */}
+      <Filters activeCategory={activeCategory} onSelectCategory={setActiveCategory} />
     </div>
   )
 }
