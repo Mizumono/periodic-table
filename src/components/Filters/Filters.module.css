@@ -1,7 +1,10 @@
 .filters {
   background-color: #fff;
   border: none;
+  display: flex;
+  overflow: auto;
   padding: 8px;
+  white-space: nowrap;
 }
 
 .filter {
