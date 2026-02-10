@@ -25,6 +25,7 @@ function App() {
         activeCategory={activeCategory}
         onSelectCategory={setActiveCategory}
         onSelectElement={setSelectedElement}
+        selectedElement={selectedElement}
       />
       <ElementDetails element={selectedElement} />
       <div className={styles.filtersWrapper}>

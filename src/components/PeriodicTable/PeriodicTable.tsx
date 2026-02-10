@@ -8,9 +8,15 @@ type PeriodicTableProps = {
   activeCategory: Category | null;
   onSelectCategory: (category: Category) => void;
   onSelectElement: (element: ElementData) => void;
+  selectedElement: ElementData | null;
 };
 
-export const PeriodicTable = ({ activeCategory, onSelectCategory, onSelectElement }: PeriodicTableProps) => {
+export const PeriodicTable = ({
+  activeCategory,
+  onSelectCategory,
+  onSelectElement,
+  selectedElement,
+}: PeriodicTableProps) => {
   const sortedElements = [...elements].sort((a, b) => a.number - b.number);
 
   return (
@@ -20,6 +26,7 @@ export const PeriodicTable = ({ activeCategory, onSelectCategory, onSelectElemen
           <Element
             dimmed={activeCategory && element.category !== activeCategory}
             element={element}
+            isSelected={selectedElement?.number === element.number}
             key={element.number}
             onSelectCategory={onSelectCategory}
             onSelectElement={onSelectElement}
