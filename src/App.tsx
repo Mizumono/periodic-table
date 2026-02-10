@@ -20,17 +20,20 @@ function App() {
   };
 
   return (
-    <div className={styles.appWrapper} onClick={handleWrapperClick} ref={appWrapperRef}>
-      <PeriodicTable
-        activeCategory={activeCategory}
-        onSelectCategory={setActiveCategory}
-        onSelectElement={setSelectedElement}
-        selectedElement={selectedElement}
-      />
-      <ElementDetails element={selectedElement} />
+    <div className={styles.container} onClick={handleWrapperClick} ref={appWrapperRef}>
+      <div className={styles.content}>
+        <PeriodicTable
+          activeCategory={activeCategory}
+          onSelectCategory={setActiveCategory}
+          onSelectElement={setSelectedElement}
+          selectedElement={selectedElement}
+        />
+
+      </div>
+      {/* <ElementDetails element={selectedElement} />
       <div className={styles.filtersWrapper}>
         <Filters activeCategory={activeCategory} onSelectCategory={setActiveCategory} />
-      </div>
+      </div> */}
     </div>
   )
 }

@@ -3,4 +3,8 @@
   gap: 2px;
   grid-template-columns: repeat(18, 64px);
   grid-template-rows: repeat(10, 64px);
+  height: 100%;
+  overflow: auto;
+  padding: 32px;
+  width: 100%;
 }
