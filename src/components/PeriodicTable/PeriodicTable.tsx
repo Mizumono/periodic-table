@@ -21,18 +21,20 @@ export const PeriodicTable = ({
 
   return (
     <div className={styles.periodicTable}>
-      {
-        sortedElements.map((element) => (
-          <Element
-            dimmed={activeCategory && element.category !== activeCategory}
-            element={element}
-            isSelected={selectedElement?.number === element.number}
-            key={element.number}
-            onSelectCategory={onSelectCategory}
-            onSelectElement={onSelectElement}
-          />
-        ))
-      }
+      <div className={styles.content}>
+        {
+          sortedElements.map((element) => (
+            <Element
+              dimmed={activeCategory && element.category !== activeCategory}
+              element={element}
+              isSelected={selectedElement?.number === element.number}
+              key={element.number}
+              onSelectCategory={onSelectCategory}
+              onSelectElement={onSelectElement}
+            />
+          ))
+        }
+      </div>
     </div>
   );
 };

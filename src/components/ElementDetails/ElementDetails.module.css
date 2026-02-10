@@ -1,15 +1,45 @@
 .dialog {
-  background-color: #f8f9fa;
-  box-shadow:
-    0px 8px 10px -5px rgba(0, 0, 0, 0.2),
-    0px 16px 24px 2px rgba(0, 0, 0, 0.14),
-    0px 6px 30px 5px rgba(0, 0, 0, 0.12);
-  color: #000;
+  max-height: 100%;
+  padding-top: 0;
+  min-width: 320px;
+  transition:
+    transform 0.25s ease-in-out,
+    opacity 0.25s ease-in-out;
+  margin-top: 0;
+  overflow: auto;
+  overflow-x: hidden;
   height: 100%;
-  position: fixed;
-  right: 0;
+  width: 100%;
+  position: absolute;
   top: 0;
-  width: 320px;
+  left: 0;
+  background-color: #f8f9fa;
+  padding: 32px;
+  z-index: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .dialog {
+    position: static;
+    width: 33.33%;
+    z-index: 1;
+  }
+
+  .header {
+    display: none;
+  }
+}
+
+.isOpen {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.isClosed {
+  opacity: 0;
+  transform: translateX(100%);
+  pointer-events: none;
 }
 
 .elementName {

@@ -11,7 +11,7 @@ const getDefaultElement = (): ElementData | null => elements.find(element => ele
 
 function App() {
   const [activeCategory, setActiveCategory] = useState<Category | null>(null);
-  const [selectedElement, setSelectedElement] = useState<ElementData | null>(getDefaultElement);
+  const [selectedElement, setSelectedElement] = useState<ElementData | null>(window.innerWidth >= 768 ? getDefaultElement() : null);
 
   const appWrapperRef = useRef<HTMLDivElement>(null);
 
@@ -28,12 +28,14 @@ function App() {
           onSelectElement={setSelectedElement}
           selectedElement={selectedElement}
         />
-
+        <ElementDetails
+          element={selectedElement}
+          onClose={() => setSelectedElement(null)}
+        />
       </div>
-      {/* <ElementDetails element={selectedElement} />
       <div className={styles.filtersWrapper}>
         <Filters activeCategory={activeCategory} onSelectCategory={setActiveCategory} />
-      </div> */}
+      </div>
     </div>
   )
 }

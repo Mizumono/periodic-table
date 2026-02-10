@@ -3,6 +3,7 @@ import styles from'./ElementDetails.module.css'
 
 interface ElementDetailsProps {
   element: ElementData | null;
+  onClose: () => void;
 }
 
 const renderDetail = (label: string, value: string | number | undefined) => (
@@ -12,9 +13,12 @@ const renderDetail = (label: string, value: string | number | undefined) => (
     </>
 );
 
-export const ElementDetails = ({ element }: ElementDetailsProps) => {
+export const ElementDetails = ({ element, onClose }: ElementDetailsProps) => {
   return (
-    <div className={styles.dialog}>
+    <div className={`${styles.dialog} ${element ? styles.isOpen : styles.isClosed}`}>
+      <div className={styles.header}>
+        <button className={styles.closeButton} onClick={onClose}>&times;</button>
+      </div>
       <h2 className={styles.elementName}>{element?.name}</h2>
       <p className={styles.description}>{element?.description}</p>
       <dl className={styles.detailsList}>

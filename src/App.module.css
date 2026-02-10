@@ -13,10 +13,18 @@
 }
 
 .filtersWrapper {
-  bottom: 0;
+  overflow: auto;
+  background-color: #fff;
+  box-shadow: 0px -2px 4px 0px rgba(60, 64, 67, 0.15);
   display: flex;
-  flex-wrap: wrap;
-  position: absolute;
+  flex-direction: column;
+  left: 0;
+  margin: 0;
+  max-width: 100vw;
+  padding: 32px 16px;
+  position: fixed;
+  top: 100%;
+  transform: translateY(-100%);
   width: 100%;
-  z-index: 9;
+  z-index: 1;
 }
