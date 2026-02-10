@@ -5,6 +5,7 @@
   overflow: auto;
   padding: 8px;
   white-space: nowrap;
+  width: 100%;
 }
 
 .filter {

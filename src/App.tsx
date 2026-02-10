@@ -5,16 +5,18 @@ import { PeriodicTable } from './components/PeriodicTable/PeriodicTable';
 import type { ElementData } from './types';
 import type { Category } from './types/categories';
 import styles from './App.module.css';
+import { elements } from './data';
+
+const getDefaultElement = (): ElementData | null => elements.find(element => element.number === 1) || null;
 
 function App() {
   const [activeCategory, setActiveCategory] = useState<Category | null>(null);
-  const [selectedElement, setSelectedElement] = useState<ElementData | null>(null);
+  const [selectedElement, setSelectedElement] = useState<ElementData | null>(getDefaultElement);
 
   const appWrapperRef = useRef<HTMLDivElement>(null);
 
   const handleWrapperClick = () => {
     setActiveCategory(null);
-    setSelectedElement(null);
   };
 
   return (
