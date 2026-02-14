@@ -1,7 +1,5 @@
 import { useRef, useState } from 'react';
-import { ElementDetails } from './components/ElementDetails/ElementDetails';
-import { Filters } from './components/Filters/Filters';
-import { PeriodicTable } from './components/PeriodicTable/PeriodicTable';
+import { ElementDetails, Filters, PeriodicTable } from '@/components';
 import type { ElementData } from './types';
 import type { Category } from './types/categories';
 import styles from './App.module.css';

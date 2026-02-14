@@ -1,7 +1,7 @@
 import { elements } from '../../data';
 import type { ElementData } from '../../types';
 import type { Category } from '../../types/categories';
-import { Element } from '../Element/Element';
+import { Element } from '@/components';
 import styles from'./PeriodicTable.module.css';
 
 type PeriodicTableProps = {
