@@ -1,6 +1,6 @@
-import type { Category } from '../../types/categories';
+import type { Category } from '@/types/categories';
 
-export const categoryColors: Record<
+export const CATEGORY_COLORS: Record<
   Category,
   { backgroundColor: string; color: string }
 > = {

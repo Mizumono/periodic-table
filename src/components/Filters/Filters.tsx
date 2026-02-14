@@ -1,5 +1,5 @@
-import { categoryColors } from '../Element/colors';
-import { CATEGORY_LABELS, type Category } from '../../types/categories';
+import { CATEGORY_COLORS, CATEGORY_LABELS } from '@/constants';
+import type { Category } from '../../types/categories';
 
 import a11y from '../../styles/a11y.module.css';
 import styles from './Filters.module.css';
@@ -20,8 +20,8 @@ export const Filters = ({ activeCategory, onSelectCategory }: FiltersProps) => (
           className={`${styles.filter} ${activeCategory === category ? styles.active : ''}`}
           key={key}
           style={{
-            '--category-color': categoryColors[category].color,
-            '--category-background-color': categoryColors[category].backgroundColor,
+            '--category-color': CATEGORY_COLORS[category].color,
+            '--category-background-color': CATEGORY_COLORS[category].backgroundColor,
           } as React.CSSProperties}
         >
           <input

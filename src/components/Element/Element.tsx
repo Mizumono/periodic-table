@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import type { Category } from '../../types/categories';
 import type { ElementData } from '../../types/index';
-import { categoryColors } from './colors';
+import { CATEGORY_COLORS } from '@/constants';
 import styles from'./Element.module.css'
 
 interface ElementProps {
@@ -19,7 +19,7 @@ export const Element = ({
   onSelectCategory,
   onSelectElement,
 }: ElementProps) => {
-  const colors = categoryColors[element.category];
+  const colors = CATEGORY_COLORS[element.category];
 
   const buttonRef = useRef<HTMLButtonElement | null>(null);
 
