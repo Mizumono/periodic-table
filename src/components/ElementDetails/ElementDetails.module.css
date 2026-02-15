@@ -1,4 +1,4 @@
-.dialog {
+.elementDetails {
   max-height: 100%;
   padding-top: 0;
   min-width: 320px;
@@ -19,7 +19,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .dialog {
+  .elementDetails {
     position: static;
     width: 33.33%;
     z-index: 1;

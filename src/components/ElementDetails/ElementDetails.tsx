@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import type { Element } from '@/types';
 import styles from'./ElementDetails.module.css'
 
@@ -13,9 +14,9 @@ const renderDetail = (label: string, value: string | number | undefined) => (
     </>
 );
 
-export const ElementDetails = ({ element, onClose }: ElementDetailsProps) => {
+export const ElementDetails = memo(function ElementDetails({ element, onClose }: ElementDetailsProps) {
   return (
-    <div className={`${styles.dialog} ${element ? styles.isOpen : styles.isClosed}`}>
+    <div className={`${styles.elementDetails} ${element ? styles.isOpen : styles.isClosed}`}>
       <div className={styles.header}>
         <button className={styles.closeButton} onClick={onClose}>&times;</button>
       </div>
@@ -30,4 +31,4 @@ export const ElementDetails = ({ element, onClose }: ElementDetailsProps) => {
       </dl>
     </div>
   );
-};
+});
