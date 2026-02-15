@@ -1,6 +1,5 @@
 import { CATEGORY_COLORS, CATEGORY_LABELS } from '@/constants';
-import type { Category } from '../../types/categories';
-
+import type { Category } from '@/types';
 import a11y from '../../styles/a11y.module.css';
 import styles from './Filters.module.css';
 

@@ -1,8 +1,8 @@
-import type { ElementData } from '../../types';
+import type { Element } from '@/types';
 import styles from'./ElementDetails.module.css'
 
 interface ElementDetailsProps {
-  element: ElementData | null;
+  element: Element | null;
   onClose: () => void;
 }
 

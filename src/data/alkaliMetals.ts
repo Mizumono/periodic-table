@@ -1,6 +1,6 @@
-import type { ElementData } from '../types';
+import type { Element } from '@/types';
 
-export const alkaliMetals: ElementData[] = [
+export const alkaliMetals: Element[] = [
   {
     category: 'alkali_metal',
     group: 1,

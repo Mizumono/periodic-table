@@ -1,6 +1,6 @@
-import type { ElementData } from '../types';
+import type { Element } from '@/types';
 
-export const reactiveNonmetals: ElementData[] = [
+export const reactiveNonmetals: Element[] = [
   {
     atomicMass: 1.00784,
     boilingPoint: -252.87,

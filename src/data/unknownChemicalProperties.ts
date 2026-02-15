@@ -1,6 +1,6 @@
-import type { ElementData } from '../types';
+import type { Element } from '@/types';
 
-export const unknownChemicalProperties: ElementData[] = [
+export const unknownChemicalProperties: Element[] = [
   {
     category: 'unknown',
     group: 9,

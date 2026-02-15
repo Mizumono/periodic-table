@@ -1,6 +1,6 @@
-import type { ElementData } from '../types';
+import type { Element } from '@/types';
 
-export const actinides: ElementData[] = [
+export const actinides: Element[] = [
   {
     category: 'actinide',
     group: 3,

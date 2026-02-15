@@ -1,6 +1,6 @@
-import type { ElementData } from '../types';
+import type { Element } from '@/types';
 
-export const metalloids: ElementData[] = [
+export const metalloids: Element[] = [
   {
     category: 'metalloid',
     group: 13,

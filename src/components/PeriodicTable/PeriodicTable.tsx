@@ -1,14 +1,13 @@
 import { elements } from '../../data';
-import type { ElementData } from '../../types';
-import type { Category } from '../../types/categories';
-import { Element } from '@/components';
+import type { Category, Element } from '@/types';
+import { ElementTile } from '@/components';
 import styles from'./PeriodicTable.module.css';
 
 type PeriodicTableProps = {
   activeCategory: Category | null;
   onSelectCategory: (category: Category) => void;
-  onSelectElement: (element: ElementData) => void;
-  selectedElement: ElementData | null;
+  onSelectElement: (element: Element) => void;
+  selectedElement: Element | null;
 };
 
 export const PeriodicTable = ({
@@ -24,7 +23,7 @@ export const PeriodicTable = ({
       <div className={styles.content}>
         {
           sortedElements.map((element) => (
-            <Element
+            <ElementTile
               dimmed={activeCategory && element.category !== activeCategory}
               element={element}
               isSelected={selectedElement?.number === element.number}

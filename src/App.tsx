@@ -1,15 +1,14 @@
 import { useRef, useState } from 'react';
 import { ElementDetails, Filters, PeriodicTable } from '@/components';
-import type { ElementData } from './types';
-import type { Category } from './types/categories';
+import type { Category, Element } from '@/types';
 import styles from './App.module.css';
 import { elements } from './data';
 
-const getDefaultElement = (): ElementData | null => elements.find(element => element.number === 1) || null;
+const getDefaultElement = (): Element | null => elements.find(element => element.number === 1) || null;
 
 function App() {
   const [activeCategory, setActiveCategory] = useState<Category | null>(null);
-  const [selectedElement, setSelectedElement] = useState<ElementData | null>(window.innerWidth >= 768 ? getDefaultElement() : null);
+  const [selectedElement, setSelectedElement] = useState<Element | null>(window.innerWidth >= 768 ? getDefaultElement() : null);
 
   const appWrapperRef = useRef<HTMLDivElement>(null);
 

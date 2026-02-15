@@ -1,6 +1,6 @@
-import type { ElementData } from '../types';
+import type { Element } from '@/types';
 
-export const postTransitionMetals: ElementData[] = [
+export const postTransitionMetals: Element[] = [
   {
     category: 'post_transition_metal',
     group: 13,

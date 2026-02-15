@@ -1,6 +1,6 @@
-import type { ElementData } from '../types';
+import type { Element } from '@/types';
 
-export const lanthanides: ElementData[] = [
+export const lanthanides: Element[] = [
   {
     category: 'lanthanide',
     group: 3,

@@ -1,18 +1,17 @@
 import { useEffect, useRef } from 'react';
-import type { Category } from '../../types/categories';
-import type { ElementData } from '../../types/index';
+import type { Category, Element } from '@/types';
 import { CATEGORY_COLORS } from '@/constants';
-import styles from'./Element.module.css'
+import styles from'./ElementTile.module.css'
 
 interface ElementProps {
   dimmed: boolean | null;
-  element: ElementData;
+  element: Element;
   isSelected: boolean;
   onSelectCategory: (category: Category) => void;
-  onSelectElement: (element: ElementData) => void;
+  onSelectElement: (element: Element) => void;
 }
 
-export const Element = ({
+export const ElementTile = ({
   dimmed,
   element,
   isSelected,

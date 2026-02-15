@@ -1,4 +1,4 @@
-import type { Category } from '@/types/categories';
+import type { Category } from '@/types/category';
 
 export const CATEGORY_LABELS: Record<Category, string> = {
   actinide: 'Actinide',

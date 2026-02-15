@@ -1,6 +1,6 @@
-import type { ElementData } from '../types';
+import type { Element } from '@/types';
 
-export const nobleGases: ElementData[] = [
+export const nobleGases: Element[] = [
   {
     category: 'noble_gas',
     group: 18,
