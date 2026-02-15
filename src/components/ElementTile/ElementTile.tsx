@@ -1,39 +1,38 @@
-import { useEffect, useRef } from 'react';
+import { memo, useCallback, useLayoutEffect, useRef } from 'react';
 import type { Category, Element } from '@/types';
 import { CATEGORY_COLORS } from '@/constants';
-import styles from'./ElementTile.module.css'
+import styles from'./ElementTile.module.css';
 
 interface ElementProps {
-  dimmed: boolean | null;
+  dimmed?: boolean;
   element: Element;
   isSelected: boolean;
   onSelectCategory: (category: Category) => void;
   onSelectElement: (element: Element) => void;
 }
 
-export const ElementTile = ({
+export const ElementTile = memo(function ElementTile({
   dimmed,
   element,
   isSelected,
   onSelectCategory,
   onSelectElement,
-}: ElementProps) => {
+}: ElementProps) {
   const colors = CATEGORY_COLORS[element.category];
 
   const buttonRef = useRef<HTMLButtonElement | null>(null);
 
-  useEffect(() => {
-    if(isSelected) {
+  useLayoutEffect(() => {
+    if (isSelected) {
       buttonRef.current?.focus();
     }
   }, [isSelected]);
 
-  const handleClick = (event: React.MouseEvent) => {
+  const handleClick = useCallback((event: React.MouseEvent<HTMLButtonElement>) => {
     event.stopPropagation();
-
     onSelectCategory(element.category);
     onSelectElement(element);
-  }
+  }, [element, onSelectCategory, onSelectElement]);
 
   return (
     <button
@@ -54,4 +53,4 @@ export const ElementTile = ({
       </div>
     </button>
   );
-};
+});
