@@ -1,5 +1,6 @@
-import { elements } from '../../data';
+import { memo, useMemo } from 'react';
 import type { Category, Element } from '@/types';
+import { elements } from '@/data';
 import { ElementTile } from '@/components';
 import styles from'./PeriodicTable.module.css';
 
@@ -10,13 +11,13 @@ type PeriodicTableProps = {
   selectedElement: Element | null;
 };
 
-export const PeriodicTable = ({
+export const PeriodicTable = memo(function PeriodicTable({
   activeCategory,
   onSelectCategory,
   onSelectElement,
   selectedElement,
-}: PeriodicTableProps) => {
-  const sortedElements = [...elements].sort((a, b) => a.number - b.number);
+}: PeriodicTableProps) {
+  const sortedElements = useMemo(() => [...elements].sort((a, b) => a.number - b.number), []);
 
   return (
     <div className={styles.periodicTable}>
@@ -24,7 +25,7 @@ export const PeriodicTable = ({
         {
           sortedElements.map((element) => (
             <ElementTile
-              dimmed={activeCategory && element.category !== activeCategory}
+              dimmed={activeCategory ? element.category !== activeCategory : undefined}
               element={element}
               isSelected={selectedElement?.number === element.number}
               key={element.number}
@@ -36,4 +37,4 @@ export const PeriodicTable = ({
       </div>
     </div>
   );
-};
+});
