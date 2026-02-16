@@ -1,9 +1,8 @@
 .periodicTable {
-  height: calc(100% - 96px);
+  height: calc(100% - 116px);
   overflow: auto;
   padding: 32px;
   width: 100%;
-  /* padding-bottom: 96px; */
 }
 
 .content {

@@ -8,6 +8,7 @@ type PeriodicTableProps = {
   activeCategory: Category | null;
   onSelectCategory: (category: Category) => void;
   onSelectElement: (element: Element) => void;
+  searchTerm: string;
   selectedElement: Element | null;
 };
 
@@ -15,6 +16,7 @@ export const PeriodicTable = memo(function PeriodicTable({
   activeCategory,
   onSelectCategory,
   onSelectElement,
+  searchTerm,
   selectedElement,
 }: PeriodicTableProps) {
   const sortedElements = useMemo(() => [...elements].sort((a, b) => a.number - b.number), []);
@@ -23,16 +25,24 @@ export const PeriodicTable = memo(function PeriodicTable({
     <div className={styles.periodicTable}>
       <div className={styles.content}>
         {
-          sortedElements.map((element) => (
-            <ElementTile
-              dimmed={activeCategory ? element.category !== activeCategory : undefined}
-              element={element}
-              isSelected={selectedElement?.number === element.number}
-              key={element.number}
-              onSelectCategory={onSelectCategory}
-              onSelectElement={onSelectElement}
-            />
-          ))
+          sortedElements.map((element) => {
+            const matchesCategory = !activeCategory || element.category === activeCategory;
+            const matchesSearch =
+              !searchTerm ||
+              element.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+              element.symbol.toLowerCase().includes(searchTerm.toLowerCase());
+            const dimmed = !(matchesCategory && matchesSearch);
+            return (
+              <ElementTile
+                dimmed={dimmed}
+                element={element}
+                isSelected={selectedElement?.number === element.number}
+                key={element.number}
+                onSelectCategory={onSelectCategory}
+                onSelectElement={onSelectElement}
+              />
+            )
+          })
         }
       </div>
     </div>

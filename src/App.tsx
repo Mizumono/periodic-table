@@ -1,13 +1,14 @@
 import { useRef, useState } from 'react';
-import { ElementDetails, Filters, PeriodicTable } from '@/components';
+import { ElementDetails, Filters, PeriodicTable, Search } from '@/components';
 import type { Category, Element } from '@/types';
+import { elements } from '@/data';
 import styles from './App.module.css';
-import { elements } from './data';
 
 const getDefaultElement = (): Element | null => elements.find(element => element.number === 1) || null;
 
 function App() {
   const [activeCategory, setActiveCategory] = useState<Category | null>(null);
+  const [searchTerm, setSearchTerm] = useState('');
   const [selectedElement, setSelectedElement] = useState<Element | null>(window.innerWidth >= 768 ? getDefaultElement() : null);
 
   const appWrapperRef = useRef<HTMLDivElement>(null);
@@ -23,6 +24,7 @@ function App() {
           activeCategory={activeCategory}
           onSelectCategory={setActiveCategory}
           onSelectElement={setSelectedElement}
+          searchTerm={searchTerm}
           selectedElement={selectedElement}
         />
         <ElementDetails
@@ -31,6 +33,7 @@ function App() {
         />
       </div>
       <div className={styles.filtersWrapper}>
+        <Search value={searchTerm} onChange={setSearchTerm} />
         <Filters activeCategory={activeCategory} onSelectCategory={setActiveCategory} />
       </div>
     </div>
