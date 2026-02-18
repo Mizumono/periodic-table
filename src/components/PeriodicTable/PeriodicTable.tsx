@@ -26,12 +26,13 @@ export const PeriodicTable = memo(function PeriodicTable({
       <div className={styles.content}>
         {
           sortedElements.map((element) => {
-            const matchesCategory = !activeCategory || element.category === activeCategory;
-            const matchesSearch =
-              !searchTerm ||
-              element.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-              element.symbol.toLowerCase().includes(searchTerm.toLowerCase());
-            const dimmed = !(matchesCategory && matchesSearch);
+            const categoryMismatch = activeCategory && element.category !== activeCategory;
+            const searchMismatch = searchTerm &&
+              !element.name.toLowerCase().includes(searchTerm.toLowerCase()) &&
+              !element.symbol.toLowerCase().includes(searchTerm.toLowerCase());
+
+            const dimmed = !!(categoryMismatch || searchMismatch);
+
             return (
               <ElementTile
                 dimmed={dimmed}
