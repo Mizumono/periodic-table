@@ -4,12 +4,13 @@ import type { Category, Element } from '@/types';
 import { elements } from '@/data';
 import styles from './App.module.css';
 
-const getDefaultElement = (): Element | null => elements.find(element => element.number === 1) || null;
+const DEFAULT_ELEMENT: Element | null = elements.find(e => e.symbol === 'H') ?? null;
+const isDesktop = window.matchMedia('(min-width: 768px)').matches;
 
 function App() {
   const [activeCategory, setActiveCategory] = useState<Category | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedElement, setSelectedElement] = useState<Element | null>(window.innerWidth >= 768 ? getDefaultElement() : null);
+  const [selectedElement, setSelectedElement] = useState<Element | null>(isDesktop ? DEFAULT_ELEMENT : null);
 
   const appWrapperRef = useRef<HTMLDivElement>(null);
 
@@ -18,8 +19,8 @@ function App() {
   };
 
   return (
-    <div className={styles.container} onClick={handleWrapperClick} ref={appWrapperRef}>
-      <div className={styles.content}>
+    <div className={styles.container} ref={appWrapperRef}>
+      <div className={styles.content} onClick={handleWrapperClick}>
         <PeriodicTable
           activeCategory={activeCategory}
           onSelectCategory={setActiveCategory}
